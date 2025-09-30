@@ -17,9 +17,12 @@ jobs:
         with:
           node-version: 18
 
-      - name: Install linters
-        run: |
-          npm install -g htmlhint stylelint eslint
+      - name: Install dependencies
+        run: npm ci    
+
+      # - name: Install linters
+      #   run: |
+      #     npm install -g htmlhint stylelint eslint
 
       - name: Lint HTML
         run: htmlhint "**/*.html"
