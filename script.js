@@ -8,7 +8,7 @@ function addTask() {
 
     li.onclick = () => li.remove(); // click = delete task
 
-    document.getElementById("taskList").appendChild(li);
+    document.getElementById("task-List").appendChild(li);
     input.value = "";
   }
 }
